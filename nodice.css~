@@ -1,5 +1,3 @@
-#nodice {
-
+#dice {
 display: none;
-
 }
