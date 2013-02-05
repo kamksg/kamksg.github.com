@@ -11,3 +11,7 @@ img {
 a:link {
 	color: red;
 }
+
+a:visited {
+	color: black;
+}
