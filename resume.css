@@ -1,0 +1,24 @@
+body {
+     margin-top:1%;
+     margin-left:20%;
+     margin-bottom: 5%;
+     margin-right:20%;
+}
+h1 {
+   text-align: center;
+}
+
+h2 {
+   text-decoration:underline;
+}
+
+#company {
+	 font-weight:bold;
+}
+
+#bot {
+     bottom:0;
+     margin-left: 50%;
+     margin-right: 50%;
+}
+
