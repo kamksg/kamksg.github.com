@@ -7,3 +7,7 @@ body {
 img {
 	width: 30%;
 }
+
+a:link {
+	color: red;
+}
