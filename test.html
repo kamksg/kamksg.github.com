@@ -12,9 +12,11 @@ function post(){
 	var email = document.getElementById("email").value;
 	var password = document.getElementById("pWord").value;
 	var rad = document.getElementById("radius").value;
-	var x =$.post("http://floating-hamlet-9246.herokuapp.com/submit.json", 
-			{"username":uname, "password": password, "email" : email, "radius": rad,
-			"lat":lat, "long": lon});
+	var data = [{"username": name, "password": password, "email" : email, "radius": rad,
+				"lat":lat, "long": lon}];
+	var x =$.post("http://floating-hamlet-9246.herokuapp.com/submit.json", function(data) {
+				alert("data loaded: " + data);
+				});
 }
 
 var lat=0;
