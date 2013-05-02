@@ -18,6 +18,9 @@ function post(){
 	x =$.post("http://floating-hamlet-9246.herokuapp.com/submit.json", function(data) {
 				alert("data loaded: " + data);
 				});
+	setTimeout(function(){
+		console.log(x);
+	}, 100000);
 }
 
 var lat=0;
