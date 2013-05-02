@@ -24,8 +24,8 @@ function getLoc(){
     {
     	navigator.geolocation.getCurrentPosition(function(position){
     		console.log('here');
-    		lat = position.coord.latitude;
-    		lon = position.coord.longitude;
+    		lat = position.coords.latitude;
+    		lon = position.coords.longitude;
 
 		});
 	}
