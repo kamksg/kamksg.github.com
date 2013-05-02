@@ -18,8 +18,10 @@ function post(){
 	x =$.post("http://floating-hamlet-9246.herokuapp.com/submit.json", function(data) {
 				alert("data loaded: " + data);
 				});
+	console.log(x);
+			
 	setTimeout(function(){
-		console.log(x);
+		console.log("XXXXXXXX");
 	}, 100000);
 }
 
