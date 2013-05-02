@@ -5,6 +5,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script>
 function post(){
+	console.log("post");
 	var fname = document.getElementById("fname").value;
 	var lname = document.getElementById("lname").value;
 	var uname = document.getElementById("uname").value;
@@ -13,12 +14,12 @@ function post(){
 	var rad = document.getElementById("radius").value;
 	if (navigator.geolocation)
     {
-    navigator.geolocation.getCurrentPosition(function(position){
-    	console.log('here');
-		$.post("http://floating-hamlet-9246.herokuapp.com/submit.json", 
-	{"username":uname, "password": password, "email" : email, "radius": rad, "lat":
-	position.coord.latitude, "long": position.coord.longitude});
-	});
+    	navigator.geolocation.getCurrentPosition(function(position){
+    		console.log('here');
+			$.post("http://floating-hamlet-9246.herokuapp.com/submit.json", 
+			{"username":uname, "password": password, "email" : email, "radius": rad, "lat":
+			position.coord.latitude, "long": position.coord.longitude});
+		});
 	}
 }
 
