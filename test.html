@@ -25,9 +25,10 @@ function getLoc(){
 	if (navigator.geolocation)
     {
     	navigator.geolocation.getCurrentPosition(function(position){
-    		console.log('here');
     		lat = position.coords.latitude;
     		lon = position.coords.longitude;
+    		console.log(lat);
+    		console.log(lon);
 
 		});
 	}
